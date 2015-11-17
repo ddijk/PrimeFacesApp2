@@ -5,13 +5,13 @@ import javax.enterprise.inject.Model;
 @Model
 public class SelectOneView {
 
-    private String option;
+    private ChartValueType option;
 
-    public String getOption() {
+    public ChartValueType getOption() {
         return option;
     }
 
-    public void setOption(String option) {
+    public void setOption(ChartValueType option) {
         System.out.println("Set option to " + option);
         this.option = option;
     }

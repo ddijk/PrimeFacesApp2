@@ -19,8 +19,9 @@
           <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
             <h:outputText value="Platform:" />
             <p:selectOneButton value="#{selectOneView.option}">
-              <f:selectItem itemLabel="Xbox One" itemValue="Xbox One" />
-              <f:selectItem itemLabel="PS4" itemValue="PS4" />
+              <p:ajax event="change" update="@form" />
+              <f:selectItem itemLabel="#{message.liabilities}" itemValue="DEBT" />
+              <f:selectItem itemLabel="#{message.assets}" itemValue="ASSETS" />
               <f:selectItem itemLabel="Wii U" itemValue="Wii U" />
             </p:selectOneButton>
 
